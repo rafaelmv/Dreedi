@@ -1,2 +1,93 @@
+@import "normalize.styl"
+@import "iconfont.styl"
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+//Colores
+grisAzulClaro = #cdd9e6
+verde = #0077CC
+//Colores
+
 body
-	background red
+	background #efefef
+	font-family 'Lato', sans-serif
+	font-size 16px
+	font-weight 300
+
+ul
+	list-style none
+
+a
+	color verde
+	text-decoration none
+
+header
+	position fixed
+	top 0
+	left 0
+	rigth 0
+	width 100%
+	height 50px
+
+	nav
+		background white
+		padding 1px
+		width 90%
+		margin 4px auto
+		height 100%
+		position relative
+		-webkit-box-shadow 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
+		-moz-box-shadow 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
+		box-shadow 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
+
+		ul
+			margin 0
+			padding 0
+			position relative
+
+		.logoCompleto
+			height 45px
+			width 
+			margin 0
+			padding 0
+			width 110px
+
+			a
+				display block
+				height 100%
+
+				figure
+					height 80%
+					margin 5% .4em
+					padding 0
+
+					img
+						height 100%
+
+		.menuContraible
+
+			li
+				display none
+
+			.visibleMenu
+				display block
+				margin 0
+				padding 1px
+				width 30px
+				height 30px
+				position absolute
+				top .1em
+				right .3em
+				font-size 1.5em
+
+				transition .2s
+				-webkit-transition .2s
+				-moz-transition .2s
+				-ms-transition .2s
+				-o-transition .2s
+
+				&:hover
+					opacity 0.5
+
+
+
+
