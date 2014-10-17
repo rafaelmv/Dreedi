@@ -1,23 +1,26 @@
 @import "normalize.styl"
 @import "iconfont.styl"
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+@import "dreediSlideShow.styl"
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
 
 //Colores
-grisAzulClaro = #cdd9e6
-verde = #0077CC
+azulOscuro = #3c7b9e
+azul = #52a7f9
 //Colores
+
+// OCC Classes
+// OCC Classes
 
 body
 	background #efefef
-	font-family 'Lato', sans-serif
+	font-family 'Roboto', sans-serif
 	font-size 16px
-	font-weight 300
 
 ul
 	list-style none
 
 a
-	color verde
+	color azul
 	text-decoration none
 
 header
@@ -27,6 +30,7 @@ header
 	rigth 0
 	width 100%
 	height 50px
+	z-index 999
 
 	nav
 		background white
@@ -35,9 +39,10 @@ header
 		margin 4px auto
 		height 100%
 		position relative
-		-webkit-box-shadow 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
-		-moz-box-shadow 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
-		box-shadow 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
+		border-radius 2px
+		-webkit-box-shadow 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset
+		-moz-box-shadow 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset
+		box-shadow 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset
 
 		ul
 			margin 0
@@ -63,30 +68,112 @@ header
 					img
 						height 100%
 
-		.menuContraible
+		.visibleMenu
+			display block
+			margin 0
+			padding 1px
+			width 30px
+			height 30px
+			position absolute
+			top .1em
+			right .3em
+			font-size 1.5em
+
+			transition .2s
+			-webkit-transition .2s
+			-moz-transition .2s
+			-ms-transition .2s
+			-o-transition .2s
+
+			&:hover
+				opacity 0.5
+		
+		#menuContraible
+			background white
+			width 50%
+			margin 0 auto
+			border-radius 3px
+			position relative
+			margin-top 20px
+			padding .5em .8em
+			opacity 0
+			transition .3s ease-in-out
+
+			&:hover
+				-webkit-box-shadow 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset
+				-moz-box-shadow 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset
+				box-shadow 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset
+
+			.triangulo
+				display block
+				width 0px
+				height 0px
+				border-left 10px solid transparent
+				border-right 10px solid transparent
+				border-bottom 10px solid white
+				position absolute
+				top -13px
+				right 45%
 
 			li
-				display none
-
-			.visibleMenu
+				text-align center
 				display block
-				margin 0
-				padding 1px
-				width 30px
-				height 30px
-				position absolute
-				top .1em
-				right .3em
-				font-size 1.5em
+				margin .2em .2em
+				font-weight 100
 
-				transition .2s
-				-webkit-transition .2s
-				-moz-transition .2s
-				-ms-transition .2s
-				-o-transition .2s
+				a
+					padding 1em
 
-				&:hover
-					opacity 0.5
+
+
+section
+	.PrincipalPage
+		width 100%
+		height 30em
+		position relative
+	
+	.Slogan
+		background #3c7b9e
+		margin 0
+		padding 1em .5em
+
+		&:hover
+			box-shadow 0 17px 50px 0 rgba(0,0,0,.19)
+
+		h2
+			color #efe
+			text-align center
+			letter-spacing 1px
+			font-weight 100
+			text-trasnform italic
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

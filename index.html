@@ -16,7 +16,7 @@
 	<!-- Favicon -->
 
 	<!-- Google Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
 	<!-- Google Fonts -->
 
 </head>
@@ -31,8 +31,9 @@
 						</figure>
 					</a>
 				</li>
-				<div class="menuContraible">
-					<li class="visibleMenu"><a href="#" class="icon-menu"></a></li>
+				<li id="expandMenu" class="visibleMenu"><a href="#" class="icon-menu"></a></li>
+				<div id="menuContraible" class="menuContraible">
+					<li class="triangulo"></li>
 					<li><a href="#">Proyectos</a></li>
 					<li><a href="#">Equipo</a></li>
 					<li><a href="#">Contáctanos</a></li>
@@ -40,5 +41,32 @@
 			</ul>
 		</nav>
 	</header>
+	<section>
+		<article class="PrincipalPage">
+			<ul id="cbp-bislideshow" class="cbp-bislideshow">
+				<li><img src="img/slideshow/1.jpg" alt="dreediSlideShow"/></li>
+				<li><img src="img/slideshow/2.jpg" alt="dreediSlideShow"/></li>
+				<li><img src="img/slideshow/3.jpg" alt="dreediSlideShow"/></li>
+			</ul>
+			<div id="cbp-bicontrols" class="cbp-bicontrols">
+				<figure>
+					<img src="img/logoDreedi.png" alt="Dreedi ®">
+				</figure>
+			</div>
+		</article>
+		<article class="Slogan">
+			<h2>Enjoy the software</h2>
+		</article>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/jquery.imagesloaded.min.js"></script>
+	<script src="js/dreediSlideshow.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/dreediResponsiveMenu.js"></script>
+	<script>
+		$(function() {
+			cbpBGSlideshow.init();
+		});
+	</script>
 </body>
 </html>

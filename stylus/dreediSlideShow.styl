@@ -1,0 +1,62 @@
+.cbp-bislideshow
+  list-style: none
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+  padding: 0
+  margin: 0
+
+.cbp-bislideshow li
+  position: absolute
+  width: 100%
+  height: 100%
+  top: -0.5%
+  left: 0
+  opacity: 0
+  -webkit-transition: opacity 1s
+  -moz-transition: opacity 1s
+  transition: opacity 1s
+
+/* If background-size supported we'll add the images to the background of the li */
+.backgroundsize .cbp-bislideshow li
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  background-size: cover
+  background-position: center center
+
+/* ...and hide the images */
+.backgroundsize .cbp-bislideshow li img
+  display: none
+
+.cbp-bislideshow li img
+  display: block
+  width: 100%
+
+.cbp-bicontrols
+  position: absolute
+  width: 100%
+  height: 100%
+  margin: 0 auto
+
+  figure
+    width 200px
+    height 100%
+    margin 0 auto
+    padding 0
+    top 0
+    left 0
+
+    img
+      width 100%
+      margin-top 140px
+
+/* Fallback */
+.no-js.no-backgroundsize .cbp-bislideshow li:first-child
+  opacity: 1
+
+.no-js.backgroundsize .cbp-bislideshow li:first-child img
+  display: block
+
