@@ -9,4 +9,11 @@ $( '#expandMenu' ).on('click', function ()
 	{
 		botonMenu.css('opacity', 0)
 	}
+});$( 'html' ).on('click', function ()
+{
+	var botonMenu = $( '#menuContraible' );
+	if(botonMenu.css('opacity') == '1')
+	{
+		botonMenu.css('opacity', 0)
+	}
 });
